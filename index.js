@@ -6,6 +6,10 @@ const { MONGODB_CNN } = container.resolve('config')
 mongoose.set('useCreateIndex', true)
 
 mongoose
-  .connect(MONGODB_CNN, { useNewUrlParser: true, useFindAndModify: true })
+  .connect(MONGODB_CNN, {
+    useNewUrlParser: true,
+    useFindAndModify: true,
+    useUnifiedTopology: true
+  })
   .then(() => server.start())
   .catch(console.log)

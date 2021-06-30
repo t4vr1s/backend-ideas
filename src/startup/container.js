@@ -14,6 +14,9 @@ const { HomeController } = require('../controllers')
 const { HomeRoutes } = require('../routes/index.routes')
 const Routes = require('../routes')
 
+// models
+const { Comment, Idea, User } = require('../models')
+
 const container = createContainer()
 
 // injection of dependencies
@@ -31,6 +34,11 @@ container
   })
   .register({
     HomeRoutes: asFunction(HomeRoutes).singleton()
+  })
+  .register({
+    Comment: asValue(Comment),
+    Idea: asValue(Idea),
+    User: asValue(User)
   })
 
 module.exports = container

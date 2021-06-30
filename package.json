@@ -1,0 +1,33 @@
+{
+  "name": "apirest",
+  "version": "1.0.0",
+  "description": "api rest de la biblia de node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^4.3.4",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^5.13.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.6",
+    "mockingoose": "^2.15.2",
+    "nodemon": "^2.0.8",
+    "standard": "^16.0.3"
+  }
+}

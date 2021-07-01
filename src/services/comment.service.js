@@ -3,7 +3,7 @@ const BaseService = require('./base.service')
 let _commnetRepository = null
 let _ideaRepository = null
 
-class CommentRepository extends BaseService {
+class CommentService extends BaseService {
   constructor ({ CommentRepository, IdeaRepository }) {
     super(CommentRepository)
     _commnetRepository = CommentRepository
@@ -55,4 +55,4 @@ class CommentRepository extends BaseService {
   }
 }
 
-module.exports = CommentRepository
+module.exports = CommentService
